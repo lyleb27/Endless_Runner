@@ -8,13 +8,12 @@ public class CoinCollider : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Respawn")
+        if (other.tag == "Respawn")
         {
+            Debug.Log("pièce supprimée");
             Destroy(gameObject);
-            Debug.Log("GG NOOBY");
-            /*SceneManager.LoadScene("Menu");*/
         }
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             Debug.Log("piece gagnée");
             /*coin compteur +1*/
