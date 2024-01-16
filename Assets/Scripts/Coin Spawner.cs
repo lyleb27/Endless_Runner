@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CoinSpawner : MonoBehaviour
 {
-    public GameObject coinPrefab; // assign your meteor prefab in the inspector
+    public GameObject coinPrefab;
 
     private void Start()
     {

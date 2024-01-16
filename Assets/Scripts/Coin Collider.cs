@@ -5,18 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class CoinCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
+     private CoinManager coinManager;
+    public void Start()
+    {
+        coinManager = GameObject.FindWithTag("CoinManager").GetComponent<CoinManager>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Respawn")
+        if (other.tag == "Respawn" || other.tag == "Player")
         {
-            Debug.Log("pièce supprimée");
             Destroy(gameObject);
-        }
-        if (other.tag == "Player")
-        {
-            Debug.Log("piece gagnée");
-            /*coin compteur +1*/
+            coinManager.IncrementCoinCount();
         }
     }
 }
