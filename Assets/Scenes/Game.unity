@@ -413,7 +413,6 @@ GameObject:
   - component: {fileID: 813383782}
   - component: {fileID: 813383784}
   - component: {fileID: 813383785}
-  - component: {fileID: 813383786}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -518,19 +517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 7371179698756903919, guid: c9f3b552a084eea488145b94935fa51f, type: 3}
---- !u!114 &813383786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813383781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e871c7e516a1846beeb31467e9ff88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinCountText: {fileID: 0}
 --- !u!1 &1131148510
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +633,7 @@ GameObject:
   - component: {fileID: 1364967390}
   m_Layer: 5
   m_Name: Score
-  m_TagString: Untagged
+  m_TagString: CoinManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -725,7 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e871c7e516a1846beeb31467e9ff88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCountText: {fileID: 0}
+  coinCountText: {fileID: 1364967388}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
